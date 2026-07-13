@@ -21,7 +21,7 @@ public class PayPalPlugin implements PaymentPlugin {
             return PaymentResult.failure("Invalid email address");
         }
 
-        String txId = "CC-" + UUID.randomUUID().toString().substring(0,8);
+        String txId = "PP-" + UUID.randomUUID().toString().substring(0,8);
 
         return PaymentResult.success(txId,
             "Charged " + request.getAmount() + " " + request.getCurrency() + " to email ending in " 

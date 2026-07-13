@@ -6,7 +6,7 @@ public class CreditCardPlugin implements PaymentPlugin {
 
     @Override
     public String getName() {
-        return "CREDIT CARD";
+        return "CREDIT_CARD";
     }
 
     @Override

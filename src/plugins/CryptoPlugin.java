@@ -23,7 +23,7 @@ public class CryptoPlugin implements PaymentPlugin {
             return PaymentResult.failure("Invalid Crypto wallet address");
         }
 
-        String txId = "CC-" + UUID.randomUUID().toString().substring(0,8);
+        String txId = "CP-" + UUID.randomUUID().toString().substring(0,8);
 
         return PaymentResult.success(txId,
             "Charged " + request.getAmount() + " " + request.getCurrency() + " to wallet ending in " 
